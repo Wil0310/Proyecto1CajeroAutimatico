@@ -5,8 +5,8 @@ def consultar_saldo(): #Consulta el saldo existente en la cuenta
 
 def depositar(): #Creación de la opción de deposito que nos permitira depositar en la cuenta
     try: #Try nos ayudara a hacer una corrección en cado caso el monto ingresado no sea tipo flotante
-        monto = int(input("Monto a depositar: "))
+        monto = float(input("Monto a depositar: "))
     except ValueError:
         print("Porfavor, coloque un valor numerico, no textual")
     saldo += monto  
-    print("¡Depósito exitoso!")
+    print("¡Depósito exitoso!") #Impresión de mensaje de finalización y basicamente cierre de la funcion depositar
