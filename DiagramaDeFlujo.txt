@@ -1,0 +1,40 @@
+[Inicio]
+   ↓
+[Ingresar PIN]
+   ↓
+¿PIN correcto?
+ ┌─────────────┐
+ │     No      │ → [Mostrar error] → [Fin]
+ └─────────────┘
+   ↓ Sí
+[Mostrar menú principal]
+   ↓
+┌────────────────────────────────────────────┐
+│ ¿Qué desea hacer?                          │
+│ 1. Consultar saldo                         │
+│ 2. Retirar dinero                          │
+│ 3. Cambiar PIN                             │
+│ 4. Salir                                   │
+└────────────────────────────────────────────┘
+   ↓
+┌────────────┬────────────┬────────────┬────────────┐
+│ Opción 1   │ Opción 2   │ Opción 3   │ Opción 4   │
+│ Consultar  │ Retirar    │ Cambiar    │ Salir      │
+│ saldo      │ dinero     │ PIN        │            │
+│ ↓          │ ↓          │ ↓          │ ↓          │
+│ [Mostrar   │ ¿Monto     │ [Ingresar  │ [Fin]      │
+│ saldo]     │ válido?    │ nuevo PIN] │            │
+│            │ ↓          │ ↓          │            │
+│            │ Sí         │ [Confirmar │            │
+│            │ ↓          │ cambio]    │            │
+│            │ [Actualizar│            │            │
+│            │ saldo]     │            │            │
+│            │ ↓          │            │            │
+│            │ [Mostrar   │            │            │
+│            │ saldo]     │            │            │
+└────────────┴────────────┴────────────┴────────────┘
+   ↓
+[¿Desea realizar otra operación?]
+   ↓
+Sí → [Mostrar menú principal]
+No → [Fin]
